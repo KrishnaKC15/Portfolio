@@ -78,6 +78,7 @@ section{
     padding: 1em;  
     padding-bottom: 1.1em;
     margin: 1em;
+    overflow-y: hidden;
     
 }
 .home{
@@ -200,7 +201,12 @@ a{
     padding: 4em;
     font-size:24px;
 }
-
+.options-text{
+    color: rgba(255, 255, 255, 0.622);
+}
+.options-text:hover{
+    color: white;
+}
 @media (max-width:900px){
     
     body{
@@ -245,7 +251,7 @@ a{
     }
     .header{
         width: 10em;
-        height: 100%;
+        height: auto;
         /* margin: 5% 0; */
         position: absolute;
         background-color: transparent;
