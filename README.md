@@ -22,10 +22,15 @@ You can view the portfolio live at:
 
 ## 📁 Folder Structure
 Portfolio/
+
 ├── demo/ # Screenshots and demo video
+
 ├── images/ # Icons and image assets
+
 ├── index.html # Main HTML file
+
 ├── style.css # Main CSS file
+
 └── README.md # Project description (this file)
 
 
