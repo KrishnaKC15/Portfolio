@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+body{
+    background-color: black;
+    overflow-y: hidden;
+    background-image: url("assets/background.jpg");
+}
+.container{
+    height:79vh;
+    width: 90%;
+    margin: 5% 5%;
+    background-color: rgba(36, 35, 34, 0.473);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 4px solid rgba(128, 128, 128, 0.245);
+    box-shadow: 2px 2px 10px black;
+    border-radius: 20px;
+}
+.container::-webkit-scrollbar{
+    width: 10px;
+    /* height: 90%; */
+}
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+input[type="checkbox"]
+{
+    display: none;
+}
+.menu-icon i {
+    font-size: 1.5em;
+    display: none;
+}
+.cross-icon{
+    font-size: 1.5em;
+    display: none;
+}
+
+header a{
+    text-decoration: none;
+    /* padding: 3em; */
+    font-size: 20px;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+    height: 5%;
+    margin-bottom: 1em;
+    /* width: %; */
+}
+.Options{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    
+    width: 100%;
+}
+section{
+    
+    width: 96%;
+    height: auto;
+    padding: 1em;  
+    padding-bottom: 1.1em;
+    margin: 1em;
+    
+}
+.home{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% auto;   
+}
+.boxes{
+    box-shadow: 2px 4px 10px rgb(136, 120, 120);  
+}
+.pht{
+    /* width:41rem; */
+    height: 32rem;
+    grid-row: 1 /span 2;
+    grid-column: 2 /span 1;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.passport{
+    border-radius: 50%;
+}
+.name{
+    font-size: 40px;
+    padding-top: 1em;
+}
+.introduction{
+    padding: 15%;
+    font-size: 60px;
+    font-family: "Dancing Script", cursive;
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+}
+.self-intro{
+    padding:  1%;
+    font-size: 30px;
+    line-height: 30px;
+    
+}
+.self-intro p{
+    line-height: 1.5em;
+}
+
+.education-col{
+    padding: 1.5em;
+    line-height: 1.7em;
+    border: 2px solid rgba(65, 63, 62, 0.647) ;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 0px black;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.education-col:hover{
+    box-shadow: 2px 2px 10px white ;
+}
+.heading-course{
+    font-size: 2em;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+}
+.heading-skills{
+    font-size: larger;
+    font-weight: bolder ;
+}
+.skills ul li {
+    margin: 2em;
+}
+.skills ul li ul a{
+    color: #87CEEB	;
+}
+
+.experience p{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 0;
+    font-family: "Dancing Script", cursive;
+
+}
+.website ul li {
+    margin: 2em;
+    font-size: 24px;
+
+}
+.website ul li a span{
+    color:#87CEEB ;
+}
+
+.certificate-images{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.certificate-content{
+    height: max-content;
+    width: 40%;
+    margin: 1em;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.526);
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out ;
+}
+.cer-intro{
+    font-size: 28px;
+}
+.certificate-content:hover{
+    box-shadow: 2px 2px 15px white;
+}
+.certificate-content img{
+    border-radius: 5%;
+}
+.contact-info{
+    padding: 4em;
+    font-size:24px;
+}
+
+@media (max-width:900px){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu-icon i{
+        display: inline;
+        position: relative;
+        left: 1em;
+        top: 1em;
+    }
+    .cross{
+        text-align: end;
+        padding-right: 1em;
+    }
+    .Options{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: black;
+        width: 10em;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left:-300px;
+        padding-left: 1em;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    #menu:checked + .menu-icon{
+        display: none;
+    }
+    #menu:checked +.menu-icon +.Options .cross-icon{
+        display: inline-block;
+        text-align: end;
+    }
+    .header{
+        width: 10em;
+        height: 100%;
+        /* margin: 5% 0; */
+        position: absolute;
+        background-color: transparent;
+    }
+
+    #menu:checked +.menu-icon +.Options{
+        width: 10em;
+        height: 100vh;
+        left: 0px;
+    }
+    .pht{
+        width: 87%;
+        height: 54%;
+    }
+
+}
+@media(max-width:650px)
+{
+    section{
+        width: 85%;
+    }
+    
+    .self-intro{
+        font-size: 20px;
+        padding-left: 0;
+    }
+    .introduction{
+        font-size: 40px;
+    }
+    .name,.heading{
+        font-size: 30px;
+    }
+    .heading-course{
+        font-size: 1.5em;
+    }
+    .experience p{
+        padding:1em;
+        font-size: 25px;
+    }
+    .website ul li{
+        font-size: 15px;
+    }
+    .certificate-images{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .cer-intro{
+        font-size: 15px;
+    }
+    .contact-info{
+        padding: 1.5em;
+        font-size:15px;
+    }
+}
