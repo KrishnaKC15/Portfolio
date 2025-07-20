@@ -7,7 +7,7 @@ It is a simple yet elegant personal portfolio website, showcasing my skills, pro
 ### 🔗 Live Demo
 
 You can view the portfolio live at:  
-**[https://krishnakc15.github.io/Portfolio](https://krishnakc15.github.io/Portfolio)**
+**[https://krishnakc15.github.io/Portfolio](https://krishnakc15.github.io/Portfolio/)**
 
 ---
 
